@@ -16,6 +16,10 @@
 		C73864AC240FB43E00BCF9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864AB240FB43E00BCF9A7 /* main.m */; };
 		C73864B6240FB43E00BCF9A7 /* UIButton_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864B5240FB43E00BCF9A7 /* UIButton_DemoTests.m */; };
 		C73864C1240FB43E00BCF9A7 /* UIButton_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864C0240FB43E00BCF9A7 /* UIButton_DemoUITests.m */; };
+		C73864D024109A1D00BCF9A7 /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864CF24109A1D00BCF9A7 /* UIButton+Extensions.m */; };
+		C73864D32410AB4C00BCF9A7 /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864D22410AB4C00BCF9A7 /* ColorButton.m */; };
+		C73864D62410AC0100BCF9A7 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864D52410AC0100BCF9A7 /* UIImage+Util.m */; };
+		C73864DB2410B5BF00BCF9A7 /* ExpandTouchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C73864DA2410B5BF00BCF9A7 /* ExpandTouchButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,15 @@
 		C73864BC240FB43E00BCF9A7 /* UIButton-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIButton-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73864C0240FB43E00BCF9A7 /* UIButton_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_DemoUITests.m; sourceTree = "<group>"; };
 		C73864C2240FB43E00BCF9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73864CE24109A1D00BCF9A7 /* UIButton+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extensions.h"; sourceTree = "<group>"; };
+		C73864CF24109A1D00BCF9A7 /* UIButton+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extensions.m"; sourceTree = "<group>"; };
+		C73864D12410AB4C00BCF9A7 /* ColorButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
+		C73864D22410AB4C00BCF9A7 /* ColorButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
+		C73864D42410AC0100BCF9A7 /* UIImage+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		C73864D52410AC0100BCF9A7 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
+		C73864D72410ACE700BCF9A7 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		C73864D92410B5BF00BCF9A7 /* ExpandTouchButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandTouchButton.h; sourceTree = "<group>"; };
+		C73864DA2410B5BF00BCF9A7 /* ExpandTouchButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandTouchButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +123,9 @@
 				C738649D240FB43D00BCF9A7 /* SceneDelegate.m */,
 				C738649F240FB43D00BCF9A7 /* ViewController.h */,
 				C73864A0240FB43D00BCF9A7 /* ViewController.m */,
+				C73864D92410B5BF00BCF9A7 /* ExpandTouchButton.h */,
+				C73864DA2410B5BF00BCF9A7 /* ExpandTouchButton.m */,
+				C73864D82410ADBE00BCF9A7 /* color */,
 				C73864A2240FB43D00BCF9A7 /* Main.storyboard */,
 				C73864A5240FB43E00BCF9A7 /* Assets.xcassets */,
 				C73864A7240FB43E00BCF9A7 /* LaunchScreen.storyboard */,
@@ -135,6 +151,20 @@
 				C73864C2240FB43E00BCF9A7 /* Info.plist */,
 			);
 			path = "UIButton-DemoUITests";
+			sourceTree = "<group>";
+		};
+		C73864D82410ADBE00BCF9A7 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				C73864D72410ACE700BCF9A7 /* Helper.h */,
+				C73864D12410AB4C00BCF9A7 /* ColorButton.h */,
+				C73864D22410AB4C00BCF9A7 /* ColorButton.m */,
+				C73864D42410AC0100BCF9A7 /* UIImage+Util.h */,
+				C73864D52410AC0100BCF9A7 /* UIImage+Util.m */,
+				C73864CE24109A1D00BCF9A7 /* UIButton+Extensions.h */,
+				C73864CF24109A1D00BCF9A7 /* UIButton+Extensions.m */,
+			);
+			path = color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73864D024109A1D00BCF9A7 /* UIButton+Extensions.m in Sources */,
+				C73864D32410AB4C00BCF9A7 /* ColorButton.m in Sources */,
 				C73864A1240FB43D00BCF9A7 /* ViewController.m in Sources */,
 				C738649B240FB43D00BCF9A7 /* AppDelegate.m in Sources */,
 				C73864AC240FB43E00BCF9A7 /* main.m in Sources */,
+				C73864DB2410B5BF00BCF9A7 /* ExpandTouchButton.m in Sources */,
+				C73864D62410AC0100BCF9A7 /* UIImage+Util.m in Sources */,
 				C738649E240FB43D00BCF9A7 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
